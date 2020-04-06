@@ -1,8 +1,8 @@
 package com.morrisje.console;
 
-import com.morrisje.AppConfig;
 import com.morrisje.MessageGenerator;
 import com.morrisje.NumberGenerator;
+import com.morrisje.config.AppConfig;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.context.ConfigurableApplicationContext;
@@ -21,7 +21,7 @@ public class Main {
         NumberGenerator numberGenerator = context.getBean(NumberGenerator.class);
 
         int number = numberGenerator.next();
-        log.info("number = {}", number);
+        //log.info("number = {}", number);
 //        Get game bean
 //        Game game = context.getBean(Game.class);
         MessageGenerator messageGenerator = context.getBean(MessageGenerator.class);
